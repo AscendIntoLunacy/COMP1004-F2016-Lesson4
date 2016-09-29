@@ -16,5 +16,30 @@ namespace COMP1004_F2016_Lesson4
         {
             InitializeComponent();
         }
+
+        private void CalculatorButton_Click(object sender, EventArgs e)
+        {
+            Button CalculatorButton = (Button)sender;
+
+            switch(CalculatorButton.Text)
+            {
+                case "C":
+                    ResultTextBox.Text = "0";
+                    break;
+                case "+":
+                    // call the addition method
+                    break;
+                case "-":
+                    // call the subtraction method
+                    break;
+                case "X":
+                    // call the multiply method
+                    break;
+                case "/":
+                    // call the division method
+                    break;
+
+            }
+        }
     }
 }
